@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Currency Exchange API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered" style="max-width: 500px">
+          <h2 class="title is-2">Currency Exchange Rate API</h2>
+          <div style="margin-top: 50px" class="columns">
+            <div class="column">
+              <img
+                id="flag1"
+                src="https://www.countryflags.io/be/flat/64.png"
+              /><br />
+              <div class="select">
+                <select id="select-currency1">
+                  <option value="USD" selected>USD</option>
+                  <option value="CAD">CAD</option>
+                  <option value="INR">INR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="AUD">AUD</option>
+                  <option value="BRL">BRL</option>
+                  <option value="MXN">MXN</option>
+                  <option value="NZD">NZD</option>
+                </select>
+              </div>
+              <input
+                style="margin-top: 25px"
+                class="input"
+                type="number"
+                id="getCurrency1"
+              />
+            </div>
+            <div class="column">
+              <img
+                id="flag2"
+                src="https://www.countryflags.io/be/flat/64.png"
+              /><br />
+              <div class="select">
+                <select id="select-currency2">
+                  <option value="USD">USD</option>
+                  <option value="CAD" selected>CAD</option>
+                  <option value="INR">INR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="AUD">AUD</option>
+                  <option value="BRL">BRL</option>
+                  <option value="MXN">MXN</option>
+                  <option value="NZD">NZD</option>
+                </select>
+              </div>
+              <input
+                style="margin-top: 25px"
+                class="input"
+                type="number"
+                id="getCurrency2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-footer has-text-centered">
+        <p>
+          Source APIs:
+          <a href="https://exchangeratesapi.io/">Exchangerateapi.io</a>,
+          <a href="https://www.countryflags.io/">Countryflags.io</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
