@@ -46,10 +46,10 @@ selectCurrency2.addEventListener('change', function (event) {
   getRates(selectCurrency1.value, this.value);
 });
 
-getCurrency1.addEventListener('keyup', function () {
+getCurrency1.addEventListener('input', function () {
   conversion(parseInt(this.value), 1); // Currency Conversion with 1st Currency Selected
 });
-getCurrency2.addEventListener('keyup', function () {
+getCurrency2.addEventListener('input', function () {
   conversion(parseInt(this.value), 2); // Currency Conversion with 2nd Currency Selected
 });
 
